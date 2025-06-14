@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+<style>
+    /* Nháy mắt bằng animation scale Y */
+    .eye {
+      transform-origin: center;
+      animation: blink 4s infinite;
+    }
+
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      92%, 94%      { transform: scaleY(0.1); }
+    }
+
+    /* Miệng cười nhún nhẹ */
+    .mouth {
+      animation: smile-bounce 2s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    @keyframes smile-bounce {
+      0%, 100% { d: path("M22,35 Q30,42 38,35"); }
+      50%      { d: path("M22,34 Q30,44 38,34"); }
+    }
+
+    .title {
+      font: bold 18px 'Verdana', cursive, sans-serif;
+      fill: #8A4FFF;
+    }
+
+    .letter {
+      font: bold 14px sans-serif;
+      fill: white;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+
+    .circle-A { fill: #FF6B6B; }
+    .circle-B { fill: #FFD166; }
+    .circle-C { fill: #4ECDC4; }
+    .circle-D { fill: #1A535C; }
+  </style>
+
+  <!-- Mặt cười -->
+  <circle cx="30" cy="30" r="20" fill="#FFD54F" stroke="#FBC02D" stroke-width="2"/>
+
+  <!-- Mắt trái -->
+  <circle class="eye" cx="24" cy="25" r="2.5" fill="#000"/>
+
+  <!-- Mắt phải -->
+  <circle class="eye" cx="36" cy="25" r="2.5" fill="#000"/>
+
+  <!-- Miệng cười động -->
+  <path class="mouth" d="M22,35 Q30,42 38,35" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Các vòng tròn chứa chữ cái -->
+  <circle class="circle-A" cx="65" cy="20" r="10"/>
+  <text x="65" y="20" class="letter">A</text>
+
+  <circle class="circle-B" cx="90" cy="20" r="10"/>
+  <text x="90" y="20" class="letter">B</text>
+
+  <circle class="circle-C" cx="115" cy="20" r="10"/>
+  <text x="115" y="20" class="letter">C</text>
+
+  <circle class="circle-D" cx="140" cy="20" r="10"/>
+  <text x="140" y="20" class="letter">D</text>
+
+  <!-- Tên -->
+  <text x="55" y="48" class="title">QuizGame</text>
+</svg>

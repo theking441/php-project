@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .badge-bg { fill: #FFD700; }
+    .badge-inner { fill: #8A4FFF; }
+    .crown { fill: #FFD166; }
+    .jewel { fill: #FF6B6B; }
+    .text { font: bold 24px sans-serif; fill: white; text-anchor: middle; }
+  </style>
+  
+  <!-- Badge background -->
+  <circle class="badge-bg" cx="100" cy="100" r="95"/>
+  
+  <!-- Badge inner circle -->
+  <circle class="badge-inner" cx="100" cy="100" r="75"/>
+  
+  <!-- Crown symbol -->
+  <path class="crown" d="M60,100 L80,60 L100,90 L120,60 L140,100 L60,100 Z"/>
+  <rect class="crown" x="60" y="100" width="80" height="20"/>
+  
+  <!-- Jewels on crown -->
+  <circle class="jewel" cx="80" cy="70" r="8"/>
+  <circle class="jewel" cx="100" cy="60" r="8"/>
+  <circle class="jewel" cx="120" cy="70" r="8"/>
+  
+  <!-- Number 10 (perfect score) -->
+  <text x="85" y="135" style="font: bold 40px sans-serif; fill: white;">10</text>
+  
+  <!-- Text -->
+  <text x="100" y="180" class="text">Bậc thầy toán học</text>
+</svg>
